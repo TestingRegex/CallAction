@@ -19,7 +19,7 @@ jobs:
       # Put an example of your mandatory inputs here
       with:
         reportType: 'User'
-        dirPath: 'target/'
+        dirPath: '../target/'
 
     - name: Sanity Check
       run: ls -a target/
