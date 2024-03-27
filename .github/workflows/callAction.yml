@@ -8,13 +8,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
+      with:
+       path: target
     
     - name: My Action
       uses: benosul/SomeTests@main
       # Put an example of your mandatory inputs here
       with:
         reportType: 'User'
-        dirPath: './'
+        dirPath: 'target'
 
     - name: Sanity Check
       run: ls -a
