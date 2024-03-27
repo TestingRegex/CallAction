@@ -12,8 +12,7 @@ jobs:
     - name: Run action
       # Put your action repo here
       uses: benosul/SomeTests@main
-
       # Put an example of your mandatory inputs here
       with:
-        myInput: User
+        reportType: 'User'
       
