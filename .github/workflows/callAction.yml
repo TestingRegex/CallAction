@@ -22,7 +22,9 @@ jobs:
         dirPath: '../target/'
 
     - name: Sanity Check
-      run: ls -a target/
+      run: |
+       ls -a target/
+       ls -a 
 
     - name: Upload Artifact
       uses: actions/upload-artifact@v4
