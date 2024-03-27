@@ -9,10 +9,13 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     
-    - name: Run action
-      # Put your action repo here
+    - name: My Action
       uses: benosul/SomeTests@main
       # Put an example of your mandatory inputs here
       with:
         reportType: 'User'
         dirPath: './'
+
+    - name: Sanity Check
+      run: |
+       ls -a 
