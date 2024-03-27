@@ -11,7 +11,7 @@ jobs:
     - name: Run action
 
       # Put your action repo here
-      uses: benosul/SomeTests@master
+      uses: benosul/SomeTests@main
 
       # Put an example of your mandatory inputs here
       with:
