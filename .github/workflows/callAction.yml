@@ -16,6 +16,8 @@ jobs:
         reportType: 'User'
         dirPath: './'
 
-    - name: Sanity Check
-      run: |
-       ls -a 
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v4
+      with:
+       name: Report
+       path: report.txt 
